@@ -3,7 +3,7 @@
     <a-layout>
       <Header/>
       <a-layout-content style="min-height: calc(100vh - 124px); padding: 20px">
-        <router-view/>
+        <Content/>
       </a-layout-content>
       <a-layout-footer class="footer"><a href="https://github.com/VashUber">GitHub</a></a-layout-footer>
     </a-layout>
@@ -12,10 +12,12 @@
 
 <script>
 import Header from "@/components/Header";
+import Content from "@/components/Content";
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Content
   }
 }
 

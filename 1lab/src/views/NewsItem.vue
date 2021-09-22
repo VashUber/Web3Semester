@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/news" class="link"><a-icon type="arrow-left" style="font-size: 44px"/></router-link>
     <h2>{{item.name}}</h2>
     <div>{{item.desc}}</div>
     <div>{{item.date}}</div>

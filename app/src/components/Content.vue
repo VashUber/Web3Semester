@@ -1,13 +1,13 @@
 <template>
-  <h1>
-    Welcome here
-  </h1>
+  <router-view/>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
-
+  name: "Content",
 }
 </script>
+
+<style scoped>
+
+</style>

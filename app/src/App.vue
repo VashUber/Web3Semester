@@ -1,31 +1,45 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="app">
+    <a-layout>
+      <Header/>
+      <a-layout-content style="min-height: calc(100vh - 124px); padding: 20px">
+        <Content/>
+      </a-layout-content>
+      <a-layout-footer class="footer"><a href="https://github.com/VashUber">GitHub</a></a-layout-footer>
+    </a-layout>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Header from "@/components/Header";
+import Content from "@/components/Content";
+export default {
+  name: "App",
+  components: {
+    Header,
+    Content
+  }
 }
 
-#nav {
-  padding: 30px;
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+}
+.app {
+  font-size: 24px;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #001529;
+    height: 60px;
+    a {
+      color: #fff;
     }
   }
 }

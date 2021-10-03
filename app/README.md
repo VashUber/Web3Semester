@@ -1,4 +1,4 @@
-# 1lab
+# app
 
 ## Project setup
 ```

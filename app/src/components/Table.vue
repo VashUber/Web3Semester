@@ -1,5 +1,5 @@
 <template>
-  <a-table :columns="columns" :data-source="newsItems" bordered>
+  <a-table :columns="columns" :data-source="newsItems" bordered rowKey="id">
     <p slot="id" slot-scope="id">
       <router-link :to="`/newsItem/${id}`">-></router-link>
     </p>

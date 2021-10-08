@@ -14,6 +14,9 @@
 					<a-menu-item key="news">
 						<router-link to="/news" class="link">News</router-link>
 					</a-menu-item>
+					<a-menu-item key="gallery">
+						<router-link to="/gallery" class="link">Gallery</router-link>
+					</a-menu-item>
 				</a-menu>
 			</a-col>
 			<a-col :span="8" class="input">

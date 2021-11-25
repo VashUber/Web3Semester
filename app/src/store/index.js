@@ -18,7 +18,7 @@ const store = new Vuex.Store({
     },
     actions: {
         async fetchData(context) {
-            const data = await axios.get('http://localhost:8080/articles.json')
+            const data = await axios.get('http://demo-api.vsdev.space/api/articles')
             context.commit('setNews', data.data)
         }
     },

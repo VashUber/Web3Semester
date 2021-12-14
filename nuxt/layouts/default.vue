@@ -11,12 +11,12 @@
         <nuxt-link to="/" class="text-decoration-none">
           <v-icon large class="icon white--text">mdi-home</v-icon>
         </nuxt-link>
-        <nuxt-link to="/news" class="text-decoration-none ml-3"
-          ><v-btn text class="white--text" height="50px">News</v-btn></nuxt-link
-        >
-        <nuxt-link to="/gallery" class="text-decoration-none"
-          ><v-btn text class="white--text" height="50px">Gallery</v-btn></nuxt-link
-        >
+        <nuxt-link to="/news" class="text-decoration-none ml-3">
+          <v-btn text class="white--text" height="50px">News</v-btn>
+        </nuxt-link>
+        <nuxt-link to="/gallery" class="text-decoration-none">
+          <v-btn text class="white--text" height="50px">Gallery</v-btn>
+        </nuxt-link>
       </v-app-bar>
     </div>
     <v-main>

@@ -1,13 +1,13 @@
 <template>
-  <div class="pt-5">
-    <v-data-table dense :headers="headers" :items="news" item-key="name">
+  <v-container>
+    <v-data-table dense :headers="headers" :items="news" item-key="name" class="elevation-1">
       <template v-slot:[`item.id`]="{ item }">
         <router-link :to="/news/ + item.id">
           {{ item.id }}
         </router-link>
       </template>
     </v-data-table>
-  </div>
+  </v-container>
 </template>
 <script>
   export default {

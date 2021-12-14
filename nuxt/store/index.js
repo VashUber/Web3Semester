@@ -1,5 +1,5 @@
 export const state = () => ({
-  news: ["54"],
+  news: [],
 })
 
 export const actions = {

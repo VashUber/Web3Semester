@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-data-table dense :headers="headers" :items="news" item-key="name" class="elevation-1">
-      <template v-slot:[`item.id`]="{ item }">
+      <template v-slot:[`item.name`]="{ item }">
         <router-link :to="/news/ + item.id">
-          {{ item.id }}
+          {{ item.name }}
         </router-link>
       </template>
     </v-data-table>

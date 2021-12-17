@@ -16,7 +16,8 @@ export const mutations = {
 }
 
 export const getters = {
-  getNews: state => id => {
-    return state.news.find(elem => elem.id === id)
-  }
+  getNews: (state) => (id) => {
+    return state.news.find((elem) => elem.id === id)
+  },
+  getListNews: (state) => state.news,
 }

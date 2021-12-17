@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-carousel cycle height="650" hide-delimiter-background :show-arrows="false">
-      <v-carousel-item v-for="(item, i) in news" :key="i">
+      <v-carousel-item v-for="item in news" :key="item.id">
         <img class="" width="100%" :src="item.full_image" alt="" />
       </v-carousel-item>
     </v-carousel>
@@ -14,7 +14,7 @@
     name: "IndexPage",
     computed: {
       news() {
-        return this.$store.state.news
+        return this.$store.getters.getListNews
       },
     },
   }

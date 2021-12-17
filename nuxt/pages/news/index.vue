@@ -24,7 +24,7 @@
     },
     computed: {
       news() {
-        return this.$store.state.news
+        return this.$store.getters.getListNews
       },
     },
   }
